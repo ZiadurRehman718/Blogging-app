@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- navbar started -->
+    <div class="navbar bg-base-100 bg-[#7749f8] text-white">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">Personal Blogging App</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost mr-5 text-xl w-20">
+            Login
+          </button>
+        </div>
+      </div>
+    <!-- navbar ended -->
+    <div class="navbar h-98 py-6">
+      <h1 class="text-3xl font-bold ml-3">Signup</h1>
+      </div>
+<!-- form started -->
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <form class="card-body px-12">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">First Name</span>
+            </label>
+            <input type="text" id="F-name" placeholder="First Name" class="input input-bordered w-60" required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Last Name</span>
+            </label>
+            <input type="text" id="L-name" placeholder="Last Name" class="input input-bordered w-60" required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input type="email" id="email" placeholder="email" class="input input-bordered w-60" required />
+          </div>
+          <div id="form" class="form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input type="password" id="pass" placeholder="password" class="input input-bordered" required />
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Repeat Password</span>
+            </label>
+            <input type="password" id="R-pass" placeholder="Repeat Password" class="input input-bordered" required />
+            <label class="label">
+              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+            </label>
+            <input type="file">
+          </div>
+          <div class="form-control mt-6">
+            <button type="submit" class="btn btn-primary bg-[#7749f8]">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- form ended -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../scripts/signup.js"></script>
+</body>
+</html>
